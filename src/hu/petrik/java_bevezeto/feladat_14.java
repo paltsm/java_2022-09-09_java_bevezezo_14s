@@ -8,7 +8,7 @@ public class feladat_14 {
 		System.out.print("kérem adjon meg egy szöveget: ");
 		String szoveg = sc.nextLine();
 		String menuPont = "";
-		while (!menuPont.equals("f")){
+		while (!menuPont.equals("f")) {
 			System.out.println("kérem adja meg mit akar tenni a szöveggel: ");
 			System.out.println("\ta - nagy betűssé alakítani");
 			System.out.println("\tb - kis betűssé alakítani");
@@ -18,7 +18,7 @@ public class feladat_14 {
 			System.out.println("\tf - kilépni");
 			System.out.print("kérem adja meg az elvégzendő művelet betűjelét: ");
 			menuPont = sc.nextLine().toLowerCase();
-			switch (menuPont){
+			switch (menuPont) {
 				case "a":
 					System.out.println(szoveg.toUpperCase());
 					break;
@@ -26,7 +26,7 @@ public class feladat_14 {
 					System.out.println(szoveg.toLowerCase());
 					break;
 				case "c":
-					System.out.printf("a szöveg hossza %d karakter",szoveg.length());
+					System.out.printf("a szöveg hossza %d karakter\n", szoveg.length());
 					break;
 				case "d":
 					System.out.print("kérem adja meg a másik szöveget: ");
@@ -34,7 +34,7 @@ public class feladat_14 {
 					int osszehasonlitasEredmeny = szoveg.compareTo(masikszoveg);
 					if (osszehasonlitasEredmeny == 0) {
 						System.out.println("a két szöveg megegyezik");
-					} else if (osszehasonlitasEredmeny<0) {
+					} else if (osszehasonlitasEredmeny < 0) {
 						System.out.println("az első szöveg előrébb van az ABC-ben");
 					} else {
 						System.out.println("az második szöveg előrébb van az ABC-ben");
@@ -47,7 +47,7 @@ public class feladat_14 {
 					System.out.println("kérem adja meg az utolsó kiírandó karakter sorszámát: ");
 					int b = sc.nextInt();
 					sc.nextLine();
-					System.out.println(szoveg.substring((a-1),b));
+					System.out.println(szoveg.substring((a - 1), b));
 					break;
 				case "f":
 					System.out.println("viszlát!");
