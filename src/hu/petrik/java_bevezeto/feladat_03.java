@@ -12,10 +12,15 @@ public class feladat_03 {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("adjon meg egy pozitív valós számot: ");
 		double valos = Double.parseDouble(sc.nextLine().replace(",", "."));
-		int le = (int) Math.floor(valos);
-		int fel = (int) Math.ceil(valos);
-		System.out.printf("A megadott szám a %d és a %d egész számok között van, és ezek közül a %d számhoz van közelebb.\n", le, fel, valos - le < fel - valos ? le : fel);
-		System.out.printf("A szám egész része: %d\n", le);
-		System.out.printf("A szám törtrésze: %f\n", valos - le);
+		if (valos > 0) {
+			int le = (int) Math.floor(valos);
+			int fel = (int) Math.ceil(valos);
+			System.out.printf("A megadott szám a %d és a %d egész számok között van, és ezek közül a %d számhoz van közelebb.\n", le, fel, valos - le < fel - valos ? le : fel);
+			System.out.printf("A szám egész része: %d\n", le);
+			System.out.printf("A szám törtrésze: %f\n", valos - le);
+		} else {
+			System.out.println("nem pozitív valós számot adott meg!");
+		}
+
 	}
 }

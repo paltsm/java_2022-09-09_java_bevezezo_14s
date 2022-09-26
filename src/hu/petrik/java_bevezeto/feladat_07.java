@@ -5,10 +5,10 @@ import java.util.Scanner;
 public class feladat_07 {
 	public static void main(String[] args) {
 //		Készítsen programot, ami bekéri, hogy hányadik hónapot írunk, majd megadja, hogy melyik évszakban járunk.
-		Scanner sc=new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
 		System.out.print("adja meg hanyadik hónapot írunk: ");
-		int honap=sc.nextInt();
-		switch (honap){
+		int honap = sc.nextInt();
+		switch (honap) {
 			case 1:
 				System.out.println("január");
 				break;
